@@ -1,13 +1,105 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family:'Times New Roman';
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cantainer{
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  flex-direction: column;
+ /* justify-items: center;  */
+ width: 350px;
+ color: white;
+ border-radius: 20px;
+ align-items: center;
+}
+
+@media (max-width: 500px){
+  .cantainer{
+    width: 250px;
+  }
+
+}
+.cantainer .svgstar{
+  margin-right: auto ;
+  background-color: hsl(213, 19%, 22%);
+  width: 15px;
+  padding: 15px;
+  border-radius: 50% ;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.cantainer .svglogo{
+    margin: 2em;
+}
+
+.txtcont{
+  margin: 0 10px 10px 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+}
+ .txtcont .rating{
+  background-color:hsl(213, 19%, 22%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 10px;
+  width:fit-content;
+  padding: 5px;
+  margin: auto auto;
+}
+
+.txtcont p{
+  font-size: 15px;
+  margin-bottom: 50px;
+
+}
+
+
+.submit{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 95%;
+  height: 40px;
+  align-items: center;
+  text-decoration: none;
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  border: transparent;
+  border-radius: 50px;
+  color: white;
+  background-color: hsl(25, 97%, 53%);
+  margin-left: 10px;
+}
+
+.submit:hover{
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+  cursor: pointer;
+}
+
+.star{
+  background-color: hsl(213, 19%, 22%);
+  color: white;
+  border: transparent;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  margin: 2%;
+  padding: 3%;
+  width: 16%;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.star:hover{
+  color: hsl(25, 97%, 53%);
 }
